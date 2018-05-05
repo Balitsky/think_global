@@ -1,0 +1,241 @@
+<html>
+   <head>
+      <style>
+         #body{
+         padding-left: 15%;
+         padding-right: 15%;
+         background-color: #dee5df;
+         }
+         #header{
+         background-color:#1c872a;
+         height: 50px;
+         }
+         #headerText{
+         padding-top: 15px;
+         }      
+         #main{
+         background-color: white;
+         padding-left: 10%;
+         padding-right: 10%;
+         }
+         #padding{
+         height: 100px;
+         }
+         #footer{
+         background-color: #26972D;
+         height: 75px;
+         position:absolute;
+         width: 100%;
+         left: 0%;
+         }
+         #footerFrame{
+         background-color: #1c872a; 
+         height: 75px;
+         position:absolute;
+         width:68.9%;
+         left:15.51%;
+         }
+         #name{
+         position: absolute;
+         top: 35px;
+         right: 35%;
+         font-size: 38px;
+         color: #0c5e10;
+         }
+         #line{
+         position: absolute;
+         top: 115px;
+         right: 15.6%;
+         background-color: #21af34;
+         height: 2px;
+         width: 38%;
+         }
+         #mainLine{
+         height:20px;
+         width: 68.8%;
+         background-color: #21af34;
+         position:absolute;
+         left:15.6%;
+         }
+         #personalDataCategory{
+         position: absolute;
+         top: 200px;
+         right: 43.5%;
+         color: #5f7560;
+         font-size: 17px;
+         }
+         #personalData{
+         position: absolute;
+         top: 200px;
+         right: 33%;
+         color: #0c5e10;
+         font-size: 17px;
+         }
+         #hobbiesText{
+         font-size: 20px;
+         width: 100%;
+         }
+         .button {
+         display: inline-block;
+         border-radius: 4px;
+         background-color: #1c872a;
+         border: none;
+         color: #FFFFFF;
+         text-align: center;
+         font-size: 20px;
+         padding: 10px;
+         width: 200px;
+         transition: all 0.5s;
+         cursor: pointer;
+         margin: 5px;
+         position: absolute;
+         top: 5px;
+         width: 150px;
+         }
+         .button span {
+         cursor: pointer;
+         display: inline-block;
+         position: relative;
+         transition: 0.5s;
+         }
+         .button span:after {
+         content: '\00bb';
+         position: absolute;
+         opacity: 0;
+         top: 0;
+         right: -20px;
+         transition: 0.5s;
+         }
+         .button:hover span {
+         padding-right: 25px;
+         }
+         .button:hover span:after {
+         opacity: 1;
+         right: 0;
+         }
+         #topBtn {
+         display: none; 
+         position: fixed; 
+         bottom: 20px; 
+         right: 30px; 
+         z-index: 99; 
+         border: none; 
+         outline: none; 
+         background-color: #00AB6F; 
+         color: white; 
+         cursor: pointer; 
+         padding: 15px; 
+         border-radius: 10px; 
+         font-size: 18px; 
+         }
+         #topBtn:hover {
+         background-color: #555; 
+         }
+      </style>
+   </head>
+   <body id="body">
+      <div id="header">
+         <center>
+            <h3 id="headerText">
+               ThinkGlobal
+            </h3>
+         </center>
+      </div>
+      <a name="top"></a>
+      <div id="main">
+         <br>
+         <img height=40% src="photo.jpg">
+         <h2 id="name">
+            Alex Balitsky
+         </h2>
+         <div id="line">
+            &nbsp;
+         </div>
+         <div id="personalDataCategory">
+            Birthday:
+            <p>
+               Hometown:
+         </div>
+         <div id="personalData">
+            <b>
+               28 october 1994
+               <p>
+                  Kiev
+            </b>
+         </div>
+        <br><br><br><br><br>
+         <div id="mainLine">
+           
+         </div>
+        <br><br><br>
+         <center>
+            <h1>
+               Hobbies  
+            </h1>
+         </center>
+         <p id="hobbiesText">
+            &nbsp;&nbsp;&nbsp;&nbsp;Every man has an occupation that he really loves, and it is different for each of us.
+            A hobby is an occupation that we never get tired of. Various hobbies help us to relax because 
+            we enjoy them. As for me, I have several hobbies. 
+            My first hobby is playing the guitar. I began to play the guitar last summer. But I did
+            not go to the musical school because I decided to learn chords by myself. The first success came
+            very soon. Than I clamped more difficult chords, and now I continue learning. I relax while
+            playing the guitar, that’s why it is my hobby.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;My second hobby is listening to music. When I put on my headphones, I dive into the other
+            world. I listen to music of various genres. Music helps me to relax and think about important
+            things. My favorite groups are: Sigur Ros, Placebo, Muse, Bring Me The Horizon and others.
+            My third hobby is playing computer games. Sometimes I want to rest from doing my homework
+            and play computer games. It is very interesting, especially when you play online games such as
+            DOTA2, Battlefield 4 and others. You can talk to people and play with them. Maybe, if you get to
+            know them better, you will continue playing together. But computer games can harm your health.
+            That’s why you should not play them too long.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;In conclusion, I would like to say that hobbies are very useful and interesting. People
+            should have hobbies and enjoy life. I hope you will agree with me.
+         </p>
+        
+             <div id="padding">
+       
+     </div>
+      </div>
+
+      <button class="button" style="vertical-align:middle"
+         onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'">
+      <span>Main page </span>
+      </button>
+   </body>
+   <button onclick="topFunction()" id="topBtn">Top</button>
+   <footer id="footer">
+      <div id="footerFrame">
+        <p>
+        <center><a href="#top">Top</a></center>  
+        </p>
+        
+      </div>
+   </footer>
+</html>
+
+
+      <script>
+         
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("topBtn").style.display = "block";
+         } else {
+            document.getElementById("topBtn").style.display = "none";
+         }
+         }
+         
+         
+         var t;
+         function topFunction() {
+           
+         if(document.body.scrollTop > 2){
+           document.body.scrollTop *= 0.9;
+           document.documentElement.scrollTop *= 0.9;
+           t = setTimeout('topFunction()', 20);
+         }else clearTimeout(t);
+           return false;
+         }
+      </script>
