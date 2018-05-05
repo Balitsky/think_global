@@ -1,5 +1,102 @@
 <html>
+
+    <head>
+        <style>
+          body{
+            background: url(https://i.ytimg.com/vi/FVxVGWjcTxk/maxresdefault.jpg) no-repeat;
+            background-size:100%;
+          }
+          #a_class {
+            text-decoration:none;
+          }
+          #b_class {
+            text-decoration:none;
+          }
+          .container1{
+            position:absolute;
+            left:100px;
+            top:300px;
+          }
+          .container2{
+            position:absolute;
+            left:500px;
+            top:300px;
+          }
+          #img{
+            height:300px;
+            width:200px;
+            background-color:red;
+          } 
+          .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+          }
+
+          .middle {
+            transition: .5s ease;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+            position:relative;
+            bottom:150px;
+            height:50px;
+            width:100px;
+            left:50px;
+          }
+
+          .text {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+          }
+          .container1:hover .image {
+            opacity: .3;
+          }
+          .container1:hover .middle {
+            opacity: 1;
+          }
+          .container2:hover .image {
+            opacity: .3;
+          }
+          .container2:hover .middle {
+            opacity: 1;
+          }
+        </style>
+    </head>
+
     <body>
-        Hello!!!
+        <center>
+          <div class="container1">
+            
+                <img id="img" class="image" src="A_class.png">
+              <div class="middle">
+                <a id="a_class" href="4-6A/a_class.html">
+                <div class="text">
+                   4-6A
+                </div>
+                </a>
+              </div>
+            
+          </div>
+          
+          <div class="container2">
+            <img id="img" class="image" src="B_class.png">
+            <div class="middle">
+            <a id="b_class" href="4-6B/b_class.html">
+              <div class="text">
+                4-6B
+              </div>    
+            </a>
+            </div>
+          </div>
+          
+        </center>
     </body>
+
 </html>
