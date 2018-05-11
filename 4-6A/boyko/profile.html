@@ -223,11 +223,34 @@
           <button class="button" onclick="window.location.href='../a_class.html'">
               
       <span>
-      Mein page
+      Main page
       </span>
     </button>
     <button onclick="topFunction()" id="topBtn" style="display: block;">Top</button>
+         <script>
          
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("topBtn").style.display = "block";
+         } else {
+            document.getElementById("topBtn").style.display = "none";
+         }
+         }
+         
+         
+         var t;
+         function topFunction() {
+           
+         if(document.body.scrollTop > 2){
+           document.body.scrollTop *= 0.9;
+           document.documentElement.scrollTop *= 0.9;
+           t = setTimeout('topFunction()', 20);
+         }else clearTimeout(t);
+           return false;
+         }
+      </script>
      </div>
        
 </body>
